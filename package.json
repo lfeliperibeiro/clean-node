@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lfeliperibeiro/clean-node.git"
@@ -18,6 +28,8 @@
   },
   "homepage": "https://github.com/lfeliperibeiro/clean-node#readme",
   "devDependencies": {
+    "husky": "^5.0.0-alpha.4",
+    "lint-staged": "^10.4.0",
     "standard": "^14.3.4"
   }
 }
