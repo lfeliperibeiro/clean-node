@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lfeliperibeiro/clean-node/issues"
   },
-  "homepage": "https://github.com/lfeliperibeiro/clean-node#readme"
+  "homepage": "https://github.com/lfeliperibeiro/clean-node#readme",
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
 }
